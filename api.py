@@ -5,12 +5,12 @@ app = Flask(__name__, template_folder='HTML')
 
 @app.route('/')
 def main():
-    return render_template("welcome.html", title="Welcome")
+    return render_template("home.html", title="Welcome")
 
 
-@app.route('/signin')
+@app.route('/login')
 def signin():
-    return render_template("signin.html", title="Sign In")
+    return render_template("login.html", title="Sign In")
 
 
 @app.route('/about')
